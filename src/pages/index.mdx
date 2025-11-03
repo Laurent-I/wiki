@@ -1,18 +1,22 @@
 ---
 title: Kin – Write computer programs in Kinyarwanda
+type: page
 ---
 
 import Link from 'next/link';
 import Button from '@/components/ui/button';
+import DocsLanguageSwitcher from '@/components/DocsLanguageSwitcher';
 
 export default function Component() {
   return (
-    <div className='min-h-screen bg-background text-foreground dark:bg-background dark:text-foreground'>
-      <main>
-        <section
+    <>
+      <DocsLanguageSwitcher />
+      <div className='min-h-screen bg-background text-foreground dark:bg-background dark:text-foreground'>
+        <main>
+          <section
           id='hero'
           className='flex flex-col items-center px-4 py-16 text-center md:py-24 lg:py-32 md:px-6'
-        >
+          >
           <h1 className='text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl'>
             Kin: Programming in Kinyarwanda
           </h1>
@@ -33,7 +37,8 @@ export default function Component() {
             </Link>
           </div>
         </section>
-      </main>
+        </main>
     </div>
+    </>
   );
 }
